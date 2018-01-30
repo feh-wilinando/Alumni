@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582626532020C5A400965AA1 /* CoursesPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582626522020C5A400965AA1 /* CoursesPresenterTest.swift */; };
+		5826265A2020C78100965AA1 /* CoursesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582626592020C78100965AA1 /* CoursesPresenter.swift */; };
+		5826265C2020C7BA00965AA1 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826265B2020C7BA00965AA1 /* CoursesView.swift */; };
+		5826265E2020C7DB00965AA1 /* CoursesViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826265D2020C7DB00965AA1 /* CoursesViewMock.swift */; };
+		582626612020CD6400965AA1 /* CoursesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582626602020CD6400965AA1 /* CoursesRepository.swift */; };
+		582626632020CDD800965AA1 /* CoursesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582626622020CDD800965AA1 /* CoursesRepositoryMock.swift */; };
+		582626662020CF5800965AA1 /* DataReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582626652020CF5800965AA1 /* DataReponse.swift */; };
 		58B746BD2020A81D00C32363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746BC2020A81D00C32363 /* AppDelegate.swift */; };
-		58B746BF2020A81D00C32363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746BE2020A81D00C32363 /* ViewController.swift */; };
+		58B746BF2020A81D00C32363 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746BE2020A81D00C32363 /* CoursesViewController.swift */; };
 		58B746C22020A81D00C32363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B746C02020A81D00C32363 /* Main.storyboard */; };
 		58B746C42020A81D00C32363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B746C32020A81D00C32363 /* Assets.xcassets */; };
 		58B746C72020A81D00C32363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B746C52020A81D00C32363 /* LaunchScreen.storyboard */; };
-		58B746D22020A81D00C32363 /* AlumniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746D12020A81D00C32363 /* AlumniTests.swift */; };
 		58B746DD2020A81D00C32363 /* AlumniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746DC2020A81D00C32363 /* AlumniUITests.swift */; };
+		58B746EC2020AA2A00C32363 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746EB2020AA2A00C32363 /* Course.swift */; };
+		58B746EE2020AA9700C32363 /* CourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746ED2020AA9600C32363 /* CourseTests.swift */; };
+		58B746F02020AC8C00C32363 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746EF2020AC8C00C32363 /* Book.swift */; };
+		58B746F22020B0D700C32363 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746F12020B0D700C32363 /* BookTest.swift */; };
+		58B746F62020B12700C32363 /* BookFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B746F52020B12700C32363 /* BookFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +45,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582626522020C5A400965AA1 /* CoursesPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPresenterTest.swift; sourceTree = "<group>"; };
+		582626592020C78100965AA1 /* CoursesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPresenter.swift; sourceTree = "<group>"; };
+		5826265B2020C7BA00965AA1 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		5826265D2020C7DB00965AA1 /* CoursesViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewMock.swift; sourceTree = "<group>"; };
+		582626602020CD6400965AA1 /* CoursesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesRepository.swift; sourceTree = "<group>"; };
+		582626622020CDD800965AA1 /* CoursesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesRepositoryMock.swift; sourceTree = "<group>"; };
+		582626652020CF5800965AA1 /* DataReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReponse.swift; sourceTree = "<group>"; };
 		58B746B92020A81D00C32363 /* Alumni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alumni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B746BC2020A81D00C32363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58B746BE2020A81D00C32363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58B746BE2020A81D00C32363 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		58B746C12020A81D00C32363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58B746C32020A81D00C32363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B746C62020A81D00C32363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58B746C82020A81D00C32363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B746CD2020A81D00C32363 /* AlumniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlumniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58B746D12020A81D00C32363 /* AlumniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumniTests.swift; sourceTree = "<group>"; };
 		58B746D32020A81D00C32363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B746D82020A81D00C32363 /* AlumniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlumniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B746DC2020A81D00C32363 /* AlumniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumniUITests.swift; sourceTree = "<group>"; };
 		58B746DE2020A81D00C32363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B746EB2020AA2A00C32363 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		58B746ED2020AA9600C32363 /* CourseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTests.swift; sourceTree = "<group>"; };
+		58B746EF2020AC8C00C32363 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		58B746F12020B0D700C32363 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
+		58B746F52020B12700C32363 /* BookFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		582626542020C6F100965AA1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5826265D2020C7DB00965AA1 /* CoursesViewMock.swift */,
+				582626622020CDD800965AA1 /* CoursesRepositoryMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		582626552020C6F900965AA1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				582626562020C71200965AA1 /* Courses */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		582626562020C71200965AA1 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				5826265F2020CD4B00965AA1 /* DataLayer */,
+				582626582020C72200965AA1 /* View */,
+				582626572020C71C00965AA1 /* Presenter */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		582626572020C71C00965AA1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				582626592020C78100965AA1 /* CoursesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		582626582020C72200965AA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5826265B2020C7BA00965AA1 /* CoursesView.swift */,
+				58B746BE2020A81D00C32363 /* CoursesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5826265F2020CD4B00965AA1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				582626602020CD6400965AA1 /* CoursesRepository.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		582626642020CF4600965AA1 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				582626652020CF5800965AA1 /* DataReponse.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		582626672020D45700965AA1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58B746EA2020AA1B00C32363 /* Entities */,
+				582626642020CF4600965AA1 /* Infra */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		582626682020D47C00965AA1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58B746F42020B11500C32363 /* Factory */,
+				58B746F32020B10B00C32363 /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		58B746B02020A81D00C32363 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +197,9 @@
 		58B746BB2020A81D00C32363 /* Alumni */ = {
 			isa = PBXGroup;
 			children = (
+				582626672020D45700965AA1 /* Core */,
+				582626552020C6F900965AA1 /* Scenes */,
 				58B746BC2020A81D00C32363 /* AppDelegate.swift */,
-				58B746BE2020A81D00C32363 /* ViewController.swift */,
 				58B746C02020A81D00C32363 /* Main.storyboard */,
 				58B746C32020A81D00C32363 /* Assets.xcassets */,
 				58B746C52020A81D00C32363 /* LaunchScreen.storyboard */,
@@ -110,7 +211,8 @@
 		58B746D02020A81D00C32363 /* AlumniTests */ = {
 			isa = PBXGroup;
 			children = (
-				58B746D12020A81D00C32363 /* AlumniTests.swift */,
+				582626682020D47C00965AA1 /* Core */,
+				58B746F72020B3B100C32363 /* Scenes */,
 				58B746D32020A81D00C32363 /* Info.plist */,
 			);
 			path = AlumniTests;
@@ -123,6 +225,49 @@
 				58B746DE2020A81D00C32363 /* Info.plist */,
 			);
 			path = AlumniUITests;
+			sourceTree = "<group>";
+		};
+		58B746EA2020AA1B00C32363 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				58B746EB2020AA2A00C32363 /* Course.swift */,
+				58B746EF2020AC8C00C32363 /* Book.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		58B746F32020B10B00C32363 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				58B746ED2020AA9600C32363 /* CourseTests.swift */,
+				58B746F12020B0D700C32363 /* BookTest.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		58B746F42020B11500C32363 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				58B746F52020B12700C32363 /* BookFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		58B746F72020B3B100C32363 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				58B746F82020B3BE00C32363 /* Courses */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		58B746F82020B3BE00C32363 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				582626542020C6F100965AA1 /* Mock */,
+				582626522020C5A400965AA1 /* CoursesPresenterTest.swift */,
+			);
+			path = Courses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B746BF2020A81D00C32363 /* ViewController.swift in Sources */,
+				58B746F02020AC8C00C32363 /* Book.swift in Sources */,
+				5826265A2020C78100965AA1 /* CoursesPresenter.swift in Sources */,
+				582626662020CF5800965AA1 /* DataReponse.swift in Sources */,
+				58B746EC2020AA2A00C32363 /* Course.swift in Sources */,
+				58B746BF2020A81D00C32363 /* CoursesViewController.swift in Sources */,
 				58B746BD2020A81D00C32363 /* AppDelegate.swift in Sources */,
+				5826265C2020C7BA00965AA1 /* CoursesView.swift in Sources */,
+				582626612020CD6400965AA1 /* CoursesRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B746D22020A81D00C32363 /* AlumniTests.swift in Sources */,
+				58B746F22020B0D700C32363 /* BookTest.swift in Sources */,
+				582626532020C5A400965AA1 /* CoursesPresenterTest.swift in Sources */,
+				582626632020CDD800965AA1 /* CoursesRepositoryMock.swift in Sources */,
+				5826265E2020C7DB00965AA1 /* CoursesViewMock.swift in Sources */,
+				58B746F62020B12700C32363 /* BookFactory.swift in Sources */,
+				58B746EE2020AA9700C32363 /* CourseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
