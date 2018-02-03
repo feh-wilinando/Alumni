@@ -16,6 +16,9 @@ class CoursesViewMock: CoursesView {
     var successLoadWasCalled = false
     var finishLoadingWasCalled = false
     var failLoadWasCalled = false
+    var navigateToDetailWasCalled = false
+    var noBookAvailableWasCalled = false
+    var targetNavigation: CoursesRouter?
     
     func startLoading() {
         startLoadingWasCalled = true
@@ -31,6 +34,14 @@ class CoursesViewMock: CoursesView {
     
     func failLoad(){
         failLoadWasCalled = true
+    }
+    
+    func noBookAvailableToRead(of course: Course){
+        noBookAvailableWasCalled = true
+    }
+    func navigate(to route: CoursesRouter){
+        targetNavigation = route
+        navigateToDetailWasCalled = true
     }
     
 }

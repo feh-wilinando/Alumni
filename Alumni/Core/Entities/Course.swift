@@ -10,6 +10,23 @@ import Foundation
 
 struct Course {
     let code: String
-    let title: String
+    let description: String
+    let date: String
+    let iconName: String
+    
+    var bookState: String {
+        
+        guard let book = book  else {
+            return "Apostila Indisponível"
+        }
+        
+        guard book.hasDownloaded else {
+            return "Baixar Apostila"
+        }
+        
+        return "Ler Apostila"
+    }
+    
+    
     var book: Book? = nil
 }

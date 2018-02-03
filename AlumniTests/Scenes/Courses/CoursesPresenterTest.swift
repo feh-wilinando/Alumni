@@ -11,11 +11,6 @@ import XCTest
 
 class CoursesPresenterTest: XCTestCase {
 
-    /*
-     A CoursesView should load multiples courses
-     A Load should have 3 state starting load, loaded, finishing load
-     */
-    
     var mockedView: CoursesViewMock!
     var sucessRepository: CoursesRepository!
     var failRepository: CoursesRepository!
@@ -70,6 +65,36 @@ class CoursesPresenterTest: XCTestCase {
         XCTAssertTrue(mockedView.failLoadWasCalled)
         XCTAssertTrue(mockedView.finishLoadingWasCalled)
         XCTAssertFalse(mockedView.successLoadWasCalled)
+    }
+    
+    func testShouldNavigateToBookDetailsWhenSelectedCourseHasBookAvailable(){
+        let presenter = CoursesPresenter(view: mockedView, repository: sucessRepository)
+        
+        presenter.selected(course: courseWithABook)
+        
+        XCTAssertTrue(mockedView.navigateToDetailWasCalled)
+        
+        let route = CoursesRouter.bookDetail(withBook: defaultBook)
+        
+        guard let targetRoute = mockedView.targetNavigation else {
+            XCTFail("No Route Available")
+            return
+        }
+        XCTAssertEqual(route, targetRoute)
+        XCTAssertEqual(defaultBook, targetRoute.getData())
+    }
+    
+    
+    func testShouldNotNavigateToBookDetailsWhenSelectedCourseBookIsNotAvailable(){
+        let presenter = CoursesPresenter(view: mockedView, repository: sucessRepository)
+        
+        presenter.selected(course: courseWithoutABook)
+        
+        XCTAssertFalse(mockedView.navigateToDetailWasCalled)
+        XCTAssertTrue(mockedView.noBookAvailableWasCalled)
+        
+        
+        
     }
     
 }

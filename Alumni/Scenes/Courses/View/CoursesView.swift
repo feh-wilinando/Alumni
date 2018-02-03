@@ -13,4 +13,6 @@ protocol CoursesView: class {
     func successLoad(courses: [Course])
     func failLoad()
     func finishLoading()
+    func noBookAvailableToRead(of course: Course)
+    func navigate(to route: CoursesRouter)
 }

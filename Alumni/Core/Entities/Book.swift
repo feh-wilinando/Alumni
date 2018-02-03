@@ -8,6 +8,13 @@
 
 import Foundation
 
-struct Book {
+struct Book: Equatable {
+    
     let url: URL
+    var hasDownloaded = false
+    
+    
+    static func ==(lhs: Book, rhs: Book) -> Bool {
+        return lhs.url == rhs.url
+    }
 }

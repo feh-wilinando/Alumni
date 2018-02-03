@@ -37,4 +37,15 @@ class CoursesPresenter {
         
         
     }
+    
+    
+    
+    func selected(course: Course) {        
+        guard let book = course.book else {
+            view.noBookAvailableToRead(of: course)
+            return
+        }
+        
+        view.navigate(to: .bookDetail(withBook: book) )
+    }
 }
